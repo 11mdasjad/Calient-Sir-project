@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Harmonious techsol</title>
+    <meta name="description" content="Contact Harmonious techsol - Get in touch with our team for support, partnerships, or to join our retailer network.">
+    <title>Contact Us - Harmonious techsol</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="components.css">
@@ -11,6 +12,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%236366F1' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='48' fill='white' text-anchor='middle' font-weight='bold'%3EHT%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header class="header sticky" id="header">
         <nav class="navbar container">
             <div class="nav-wrapper">
@@ -25,7 +27,7 @@
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="earnings.html" class="nav-link">Earnings</a></li>
                     <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
                 <div class="nav-controls">
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -49,18 +51,32 @@
         </nav>
     </header>
 
-    <section id="contact" class="contact" style="padding-top: 8rem;">
+    <!-- Page Hero Banner -->
+    <section style="padding-top: 8rem; padding-bottom: 4rem; background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%); text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h1 style="color: white; font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Get In <span style="background: linear-gradient(135deg, #6366F1, #06B6D4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Touch</span></h1>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.25rem; max-width: 600px; margin: 0 auto 1.5rem;">We are here to help you grow your business. Reach out to us via any channel and our team will respond within minutes.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <span style="background: rgba(99,102,241,0.3); color: #a5b4fc; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem; border: 1px solid rgba(99,102,241,0.5);">⚡ Response in 5 minutes</span>
+                <span style="background: rgba(6,182,212,0.3); color: #67e8f9; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem; border: 1px solid rgba(6,182,212,0.5);">🕐 Mon-Sun 9AM-9PM</span>
+                <span style="background: rgba(16,185,129,0.3); color: #6ee7b7; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem; border: 1px solid rgba(16,185,129,0.5);">💬 WhatsApp Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section id="contact" class="contact" style="padding-top: 4rem;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">We'd love to hear from you. Send us a message!</p>
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">Fill out the form below and we will get back to you within 5 minutes during business hours</p>
             </div>
             <div class="contact-content">
                 <div class="contact-form-wrapper" data-aos="fade-right">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
@@ -71,59 +87,217 @@
                             <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color, #e2e8f0); border-radius: 0.5rem; background: var(--input-bg, white); color: var(--text-primary, #1e293b); font-family: inherit; font-size: 1rem;">
+                                <option value="">Select a subject</option>
+                                <option value="registration">New Retailer Registration</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing and Payments</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you. Include your city, business type, and any specific questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
                     </form>
                 </div>
+
                 <div class="contact-info" data-aos="fade-left">
                     <div class="info-card">
                         <div class="info-icon">📍</div>
-                        <div><h4>Office Address</h4><p>123 Tech Park, Digital District<br>Bangalore, India 560001</p></div>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>123 Tech Park, Digital District<br>Sector 18, Noida, UP 201301<br>Near Metro Station Gate 2</p>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">📞</div>
-                        <div><h4>Phone Number</h4><p>+91 1800-FINTECH<br>+91 98765-43210</p></div>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p>Toll Free: 1800-123-4567<br>Direct: +91 98765-43210<br>WhatsApp: +91 98765-43210</p>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">✉️</div>
-                        <div><h4>Email Address</h4><p>support@fintech.in<br>partners@fintech.in</p></div>
+                        <div style="flex: 1;">
+                            <h4>Email Address</h4>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                <a href="mailto:support@harmonioustechsol.com" style="color: #6366F1; font-weight: 500; word-break: break-all;">support@harmonioustechsol.com</a>
+                                <button class="copy-btn" title="Copy email" onclick="navigator.clipboard.writeText('support@harmonioustechsol.com').then(function(){this.textContent='✅';setTimeout(function(){document.querySelectorAll('.copy-btn').forEach(function(b){b.textContent='📋';});},2000);}.bind(this))">📋</button>
+                            </div>
+                            <p style="margin-top: 0.25rem; font-size: 0.9rem; color: var(--text-secondary, #64748b);">partners@harmonioustechsol.com</p>
+                        </div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">🕐</div>
-                        <div><h4>Working Hours</h4><p>Monday - Friday: 9 AM - 6 PM<br>Saturday: 10 AM - 4 PM</p></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday to Sunday: 9:00 AM – 9:00 PM<br>Emergency Support: 24/7 via WhatsApp<br>Response time: Under 5 minutes</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Map Placeholder Section -->
+    <section style="padding: 4rem 0; background: var(--bg-secondary, #f8fafc);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-subtitle">Visit our office or reach us online — we are always available</p>
+            </div>
+            <div style="margin-top: 2rem; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.1);" data-aos="zoom-in">
+                <div style="background: linear-gradient(135deg, #e0e7ff 0%, #cffafe 100%); height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+                    <div style="font-size: 5rem; margin-bottom: 1rem;">🗺️</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem;">Harmonious techsol HQ</h3>
+                    <p style="color: #64748b; font-size: 1rem; text-align: center; max-width: 400px;">123 Tech Park, Digital District, Sector 18<br>Noida, Uttar Pradesh 201301, India</p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                        <span style="background: white; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem; color: #6366F1; font-weight: 500; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">📍 Sector 18, Noida</span>
+                        <span style="background: white; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem; color: #6366F1; font-weight: 500; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">🚇 Near Metro Station</span>
+                        <span style="background: white; padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem; color: #6366F1; font-weight: 500; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">🅿️ Free Parking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Follow us on social media for updates, tips, and exclusive offers</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;" data-aos="fade-up">
+                <a href="#" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; background: #1877F2; border-radius: 1rem; color: white; text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">📘</span>
+                    <span style="font-weight: 700; font-size: 1.1rem;">Facebook</span>
+                    <span style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem;">@HarmoniousTechsol</span>
+                </a>
+                <a href="#" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; background: #1DA1F2; border-radius: 1rem; color: white; text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">🐦</span>
+                    <span style="font-weight: 700; font-size: 1.1rem;">Twitter / X</span>
+                    <span style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem;">@HTechsol</span>
+                </a>
+                <a href="#" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; background: #0A66C2; border-radius: 1rem; color: white; text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">💼</span>
+                    <span style="font-weight: 700; font-size: 1.1rem;">LinkedIn</span>
+                    <span style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem;">Harmonious Techsol</span>
+                </a>
+                <a href="#" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4); border-radius: 1rem; color: white; text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">📸</span>
+                    <span style="font-weight: 700; font-size: 1.1rem;">Instagram</span>
+                    <span style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem;">@harmonioustechsol</span>
+                </a>
+                <a href="#" style="display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; background: #25D366; border-radius: 1rem; color: white; text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <span style="font-size: 2.5rem; margin-bottom: 0.75rem;">💬</span>
+                    <span style="font-weight: 700; font-size: 1.1rem;">WhatsApp</span>
+                    <span style="font-size: 0.85rem; opacity: 0.9; margin-top: 0.25rem;">+91 98765-43210</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h4>Harmonious techsol</h4><p>Empowering retailers with seamless digital payment solutions.</p></div>
-                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-                <div class="footer-section"><h4>Support</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Support Center</a></li></ul></div>
-                <div class="footer-section"><h4>Follow Us</h4><div class="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">📷</a></div></div>
+                <div class="footer-section">
+                    <h4>Harmonious techsol</h4>
+                    <p>Empowering retailers with seamless digital payment solutions across India since 2020.</p>
+                    <p style="margin-top:0.5rem;">📧 support@harmonioustechsol.com</p>
+                    <p>📞 +91 98765-43210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="earnings.html">Earnings</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Mobile Recharge</a></li>
+                        <li><a href="services.html">Bill Payments</a></li>
+                        <li><a href="services.html">AEPS Banking</a></li>
+                        <li><a href="services.html">DTH Recharge</a></li>
+                        <li><a href="services.html">Money Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                    <h4 style="margin-top:1rem;">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">X</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2024 Harmonious techsol. All rights reserved. | Made with ❤️ in India</p></div>
+            <div class="footer-bottom">
+                <p>© 2024 Harmonious techsol. All rights reserved. | Made with love in India</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Login/Register Modal -->
     <div class="modal" id="authModal">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">✕</button>
+            <button class="modal-close" id="modalClose">X</button>
             <div class="auth-container">
                 <div class="auth-toggle">
                     <button class="auth-toggle-btn active" data-tab="login">Login</button>
                     <button class="auth-toggle-btn" data-tab="register">Register</button>
                 </div>
-                <div class="auth-form active" id="loginForm"><h2>Welcome Back</h2><form><div class="form-group"><label>Email or Mobile</label><input type="text" placeholder="Enter email or mobile number" required></div><div class="form-group"><label>Password</label><input type="password" placeholder="Enter your password" required></div><div class="form-row"><label class="checkbox"><input type="checkbox"><span>Remember me</span></label><a href="#" class="forgot-link">Forgot Password?</a></div><button type="submit" class="btn btn-primary btn-block">Login</button><p class="form-footer">Don't have an account? <a href="#" class="auth-switch" data-tab="register">Register here</a></p></form></div>
-                <div class="auth-form" id="registerForm"><h2>Create Account</h2><form><div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your full name" required></div><div class="form-group"><label>Email Address</label><input type="email" placeholder="Enter your email" required></div><div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 98765 43210" required></div><div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div><div class="form-group"><label>Confirm Password</label><input type="password" placeholder="Confirm your password" required></div><label class="checkbox"><input type="checkbox" required><span>I agree to Terms & Conditions</span></label><button type="submit" class="btn btn-primary btn-block">Create Account</button><p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p></form></div>
+                <div class="auth-form active" id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <form>
+                        <div class="form-group"><label>Email or Mobile</label><input type="text" placeholder="Enter email or mobile number" required></div>
+                        <div class="form-group"><label>Password</label><input type="password" placeholder="Enter your password" required></div>
+                        <div class="form-row">
+                            <label class="checkbox"><input type="checkbox"><span>Remember me</span></label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <p class="form-footer">Don't have an account? <a href="#" class="auth-switch" data-tab="register">Register here</a></p>
+                    </form>
+                </div>
+                <div class="auth-form" id="registerForm">
+                    <h2>Create Account</h2>
+                    <form>
+                        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your full name" required></div>
+                        <div class="form-group"><label>Email Address</label><input type="email" placeholder="Enter your email" required></div>
+                        <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 98765 43210" required></div>
+                        <div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div>
+                        <div class="form-group"><label>Confirm Password</label><input type="password" placeholder="Confirm your password" required></div>
+                        <label class="checkbox"><input type="checkbox" required><span>I agree to Terms and Conditions</span></label>
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                        <p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="particles.js"></script>
     <script src="theme.js"></script>
     <script src="animations.js"></script>

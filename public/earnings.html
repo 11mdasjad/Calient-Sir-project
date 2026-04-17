@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harmonious techsol Earnings - Commission rates, earnings calculator, and multiple income streams for retailers.">
     <title>Earnings - Harmonious techsol</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,6 +12,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%236366F1' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='48' fill='white' text-anchor='middle' font-weight='bold'%3EHT%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header class="header sticky" id="header">
         <nav class="navbar container">
             <div class="nav-wrapper">
@@ -23,7 +25,7 @@
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="earnings.html" class="nav-link">Earnings</a></li>
+                    <li><a href="earnings.html" class="nav-link active">Earnings</a></li>
                     <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
@@ -49,71 +51,297 @@
         </nav>
     </header>
 
-    <section id="earnings" class="earnings" style="padding-top: 8rem;">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Start Earning Today</h2>
-                <p class="section-subtitle">Multiple revenue streams for your business</p>
-            </div>
-            <div class="earnings-grid">
-                <div class="earning-card" data-aos="fade-up">
-                    <div class="earning-icon">1</div>
-                    <h3>Commission on Every Transaction</h3>
-                    <p>Earn 1.5% - 3% commission on every transaction you process through our platform</p>
-                </div>
-                <div class="earning-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="earning-icon">2</div>
-                    <h3>Referral Bonus Program</h3>
-                    <p>Refer new retailers and earn up to ₹5,000 per successful referral</p>
-                </div>
-                <div class="earning-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="earning-icon">3</div>
-                    <h3>Monthly Incentives</h3>
-                    <p>Reach targets and unlock monthly bonus pools up to ₹1,00,000</p>
-                </div>
-                <div class="earning-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="earning-icon">4</div>
-                    <h3>Cashback & Rewards</h3>
-                    <p>Earn additional cashback and reward points on bulk transactions</p>
-                </div>
-            </div>
-            <div class="earning-flow" data-aos="fade-up" data-aos-delay="200">
-                <div class="flow-step"><div class="flow-number">1</div><div class="flow-label">Sign Up</div></div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step"><div class="flow-number">2</div><div class="flow-label">Verify</div></div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step"><div class="flow-number">3</div><div class="flow-label">Start Selling</div></div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step"><div class="flow-number">4</div><div class="flow-label">Earn & Grow</div></div>
+    <!-- Page Hero Banner -->
+    <section style="padding-top: 8rem; padding-bottom: 4rem; background: linear-gradient(135deg, #10B981 0%, #059669 50%, #6366F1 100%); text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h1 style="color: white; font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Start Earning Today</h1>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 650px; margin: 0 auto 1.5rem;">Turn your retail business into a high-earning digital payment hub. Our top retailers earn over Rs.50,000 per month in commissions alone.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">💰 Up to 3% Commission</span>
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">⚡ Same-day Settlement</span>
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">🎁 Referral Bonuses</span>
             </div>
         </div>
     </section>
 
+    <!-- Earning Cards Section -->
+    <section id="earnings" class="earnings" style="padding-top: 4rem;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Multiple Income Streams</h2>
+                <p class="section-subtitle">4 powerful ways to grow your income with Harmonious techsol</p>
+            </div>
+            <div class="earnings-grid">
+                <div class="earning-card" data-aos="fade-up">
+                    <div class="earning-icon">💰</div>
+                    <h3>Commission on Every Transaction</h3>
+                    <p>Earn 1.5% to 3% commission on every transaction you process through our platform. With just 100 transactions a day averaging Rs.500 each, you earn Rs.750 to Rs.1,500 daily — that is Rs.22,500 to Rs.45,000 per month from commissions alone.</p>
+                </div>
+                <div class="earning-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="earning-icon">🎁</div>
+                    <h3>Referral Bonus Program</h3>
+                    <p>Refer new retailers to our platform and earn up to Rs.5,000 per successful referral. Refer just 10 retailers a month and earn Rs.50,000 in referral bonuses. Your referral earnings are credited within 48 hours of the new retailer completing their first transaction.</p>
+                </div>
+                <div class="earning-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="earning-icon">🏆</div>
+                    <h3>Monthly Incentives</h3>
+                    <p>Reach monthly transaction targets and unlock bonus pools up to Rs.1,00,000. Our tiered incentive program rewards consistent performers. Bronze tier (Rs.5L/month) earns Rs.5,000 bonus. Silver tier (Rs.15L/month) earns Rs.20,000. Gold tier (Rs.30L+) earns Rs.1,00,000.</p>
+                </div>
+                <div class="earning-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="earning-icon">🎯</div>
+                    <h3>Cashback and Rewards</h3>
+                    <p>Earn additional cashback and reward points on bulk transactions. Redeem reward points for wallet credits, merchandise, or cash. Special cashback offers run every week on selected services. Festival season bonuses can double your regular commission rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Earnings Calculator Section -->
+    <section style="padding: 5rem 0; background: var(--bg-secondary, #f8fafc);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Earnings Calculator</h2>
+                <p class="section-subtitle">See how much you can earn based on your daily transaction volume</p>
+            </div>
+            <div style="max-width: 800px; margin: 3rem auto 0;" data-aos="fade-up">
+                <div style="background: var(--card-bg, white); border-radius: 1.5rem; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+                    <div style="background: linear-gradient(135deg, #6366F1, #06B6D4); padding: 1.5rem 2rem;">
+                        <h3 style="color: white; font-size: 1.2rem; font-weight: 700; margin: 0;">Estimated Monthly Earnings</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0.25rem 0 0;">Based on average transaction value of Rs.500 and 2% blended commission rate</p>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: var(--bg-secondary, #f8fafc);">
+                                    <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 600; color: var(--text-primary, #1e293b); border-bottom: 2px solid var(--border-color, #e2e8f0);">Daily Transactions</th>
+                                    <th style="padding: 1rem 1.5rem; text-align: right; font-weight: 600; color: var(--text-primary, #1e293b); border-bottom: 2px solid var(--border-color, #e2e8f0);">Daily Volume</th>
+                                    <th style="padding: 1rem 1.5rem; text-align: right; font-weight: 600; color: var(--text-primary, #1e293b); border-bottom: 2px solid var(--border-color, #e2e8f0);">Daily Earning</th>
+                                    <th style="padding: 1rem 1.5rem; text-align: right; font-weight: 600; color: #10B981; border-bottom: 2px solid var(--border-color, #e2e8f0);">Monthly Earning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">100 transactions/day</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.50,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.1,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 700; font-size: 1.1rem;">Rs.30,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0); background: rgba(99,102,241,0.04);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">200 transactions/day</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.1,00,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.2,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 700; font-size: 1.1rem;">Rs.60,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">500 transactions/day</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.2,50,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: var(--text-secondary, #64748b);">Rs.5,000</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 700; font-size: 1.1rem;">Rs.1,50,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="padding: 1rem 1.5rem; background: rgba(16,185,129,0.08); border-top: 1px solid rgba(16,185,129,0.2);">
+                        <p style="color: #059669; font-size: 0.85rem; margin: 0;">* Earnings are estimates based on 2% blended commission. Actual earnings may vary based on service mix and transaction values. Referral bonuses and monthly incentives are additional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commission Rates Table -->
+    <section style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Commission Rate Structure</h2>
+                <p class="section-subtitle">Transparent, competitive rates across all services</p>
+            </div>
+            <div style="max-width: 800px; margin: 3rem auto 0;" data-aos="fade-up">
+                <div style="background: var(--card-bg, white); border-radius: 1.5rem; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: linear-gradient(135deg, #6366F1, #8B5CF6);">
+                                    <th style="padding: 1.25rem 1.5rem; text-align: left; font-weight: 600; color: white;">Service</th>
+                                    <th style="padding: 1.25rem 1.5rem; text-align: center; font-weight: 600; color: white;">Commission Rate</th>
+                                    <th style="padding: 1.25rem 1.5rem; text-align: right; font-weight: 600; color: white;">Example Earning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">📱 Mobile Recharge</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">1.5%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.15 per Rs.1,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0); background: rgba(99,102,241,0.04);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">⚡ Bill Payment</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">2%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.20 per Rs.1,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">🏧 AEPS</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">0.5%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.5 per Rs.1,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0); background: rgba(99,102,241,0.04);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">💸 Money Transfer</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">0.3%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.3 per Rs.1,000</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-color, #e2e8f0);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">📺 DTH Recharge</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">2%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.20 per Rs.1,000</td>
+                                </tr>
+                                <tr style="background: rgba(99,102,241,0.04);">
+                                    <td style="padding: 1rem 1.5rem; color: var(--text-primary, #1e293b); font-weight: 500;">💳 Credit Card Payment</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: center; color: #6366F1; font-weight: 700;">1%</td>
+                                    <td style="padding: 1rem 1.5rem; text-align: right; color: #10B981; font-weight: 600;">Rs.10 per Rs.1,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Steps Section -->
+    <section style="padding: 5rem 0; background: var(--bg-secondary, #f8fafc);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How to Start Earning</h2>
+                <p class="section-subtitle">4 simple steps to your first commission</p>
+            </div>
+            <div class="earning-flow" data-aos="fade-up" data-aos-delay="200" style="margin-top: 3rem;">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <div class="flow-label">Sign Up Free</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <div class="flow-label">KYC Verify</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <div class="flow-label">Start Selling</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <div class="flow-label">Earn and Grow</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Earning CTA -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #10B981 0%, #059669 100%); text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Ready to Start Earning?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join 50,000+ retailers who are already earning with Harmonious techsol. Registration is free and takes less than 10 minutes.</p>
+            <a href="contact.html" class="btn btn-lg" style="background: white; color: #059669; font-weight: 700; font-size: 1.1rem;">Contact Us to Get Started →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h4>Harmonious techsol</h4><p>Empowering retailers with seamless digital payment solutions.</p></div>
-                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-                <div class="footer-section"><h4>Support</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Support Center</a></li></ul></div>
-                <div class="footer-section"><h4>Follow Us</h4><div class="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">📷</a></div></div>
+                <div class="footer-section">
+                    <h4>Harmonious techsol</h4>
+                    <p>Empowering retailers with seamless digital payment solutions across India since 2020.</p>
+                    <p style="margin-top:0.5rem;">📧 support@harmonioustechsol.com</p>
+                    <p>📞 +91 98765-43210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="earnings.html">Earnings</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Mobile Recharge</a></li>
+                        <li><a href="services.html">Bill Payments</a></li>
+                        <li><a href="services.html">AEPS Banking</a></li>
+                        <li><a href="services.html">DTH Recharge</a></li>
+                        <li><a href="services.html">Money Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                    <h4 style="margin-top:1rem;">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">X</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2024 Harmonious techsol. All rights reserved. | Made with ❤️ in India</p></div>
+            <div class="footer-bottom">
+                <p>© 2024 Harmonious techsol. All rights reserved. | Made with love in India</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Login/Register Modal -->
     <div class="modal" id="authModal">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">✕</button>
+            <button class="modal-close" id="modalClose">X</button>
             <div class="auth-container">
                 <div class="auth-toggle">
                     <button class="auth-toggle-btn active" data-tab="login">Login</button>
                     <button class="auth-toggle-btn" data-tab="register">Register</button>
                 </div>
-                <div class="auth-form active" id="loginForm"><h2>Welcome Back</h2><form><div class="form-group"><label>Email or Mobile</label><input type="text" placeholder="Enter email or mobile number" required></div><div class="form-group"><label>Password</label><input type="password" placeholder="Enter your password" required></div><div class="form-row"><label class="checkbox"><input type="checkbox"><span>Remember me</span></label><a href="#" class="forgot-link">Forgot Password?</a></div><button type="submit" class="btn btn-primary btn-block">Login</button><p class="form-footer">Don't have an account? <a href="#" class="auth-switch" data-tab="register">Register here</a></p></form></div>
-                <div class="auth-form" id="registerForm"><h2>Create Account</h2><form><div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your full name" required></div><div class="form-group"><label>Email Address</label><input type="email" placeholder="Enter your email" required></div><div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 98765 43210" required></div><div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div><div class="form-group"><label>Confirm Password</label><input type="password" placeholder="Confirm your password" required></div><label class="checkbox"><input type="checkbox" required><span>I agree to Terms & Conditions</span></label><button type="submit" class="btn btn-primary btn-block">Create Account</button><p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p></form></div>
+                <div class="auth-form active" id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <form>
+                        <div class="form-group"><label>Email or Mobile</label><input type="text" placeholder="Enter email or mobile number" required></div>
+                        <div class="form-group"><label>Password</label><input type="password" placeholder="Enter your password" required></div>
+                        <div class="form-row">
+                            <label class="checkbox"><input type="checkbox"><span>Remember me</span></label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <p class="form-footer">Don't have an account? <a href="#" class="auth-switch" data-tab="register">Register here</a></p>
+                    </form>
+                </div>
+                <div class="auth-form" id="registerForm">
+                    <h2>Create Account</h2>
+                    <form>
+                        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your full name" required></div>
+                        <div class="form-group"><label>Email Address</label><input type="email" placeholder="Enter your email" required></div>
+                        <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 98765 43210" required></div>
+                        <div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div>
+                        <div class="form-group"><label>Confirm Password</label><input type="password" placeholder="Confirm your password" required></div>
+                        <label class="checkbox"><input type="checkbox" required><span>I agree to Terms and Conditions</span></label>
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                        <p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="particles.js"></script>
     <script src="theme.js"></script>
     <script src="animations.js"></script>

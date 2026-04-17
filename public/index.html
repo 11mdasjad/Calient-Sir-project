@@ -7,18 +7,10 @@
     <meta name="keywords" content="fintech, digital payment, bill payment, money transfer, AEPS, recharge">
     <meta name="author" content="Harmonious techsol">
     <title>Harmonious techsol - Digital Services for Everyone</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS Files -->
-    
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="responsive.css">
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%236366F1' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='48' fill='white' text-anchor='middle' font-weight='bold'%3EHT%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -30,9 +22,8 @@
                     <div class="logo-icon">HT</div>
                     <span class="logo-text">Harmonious techsol</span>
                 </div>
-                
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
@@ -40,7 +31,6 @@
                     <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-
                 <div class="nav-controls">
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -58,12 +48,9 @@
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </button>
-                    
                     <button class="btn btn-primary" id="loginBtn">Login</button>
                     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span><span></span><span></span>
                     </button>
                 </div>
             </div>
@@ -77,21 +64,18 @@
             <div class="gradient-blob blob-2"></div>
             <canvas id="particleCanvas"></canvas>
         </div>
-
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-title" data-aos="fade-up">
                     The Future of <span class="gradient-text">Digital Services</span>
                 </h1>
                 <p class="hero-description" data-aos="fade-up" data-aos-delay="100">
-                    Empower your retail business with seamless digital payment solutions. Recharge, transfers, bills, and banking—all in one platform.
+                    Empower your retail business with seamless digital payment solutions. Recharge, transfers, bills, and banking—all in one platform trusted by 50,000+ retailers across India.
                 </p>
-                
                 <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-                    <button class="btn btn-primary btn-lg">Get Started</button>
-                    <button class="btn btn-outline btn-lg">Watch Demo</button>
+                    <button class="btn btn-primary btn-lg" onclick="document.getElementById('loginBtn').click()">Get Started Free</button>
+                    <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
                 </div>
-
                 <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
                     <div class="stat">
                         <span class="stat-value">50K+</span>
@@ -107,7 +91,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="hero-visual" data-aos="zoom-in" data-aos-delay="400">
                 <div class="card-3d">
                     <div class="card-inner">
@@ -121,49 +104,35 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services Preview Section -->
+    <section class="services" style="padding-top: 5rem;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive digital services designed for your business</p>
+                <p class="section-subtitle">Comprehensive digital services designed for your business growth</p>
             </div>
-
             <div class="services-grid">
                 <div class="service-card card-hover-glow" data-aos="fade-up">
                     <div class="service-card-border"></div>
                     <div class="service-icon">📱</div>
                     <h3 class="service-title">Mobile Recharge</h3>
-                    <p class="service-desc">Instant prepaid & postpaid recharge for all major networks</p>
+                    <p class="service-desc">Instant prepaid & postpaid recharge for all major networks including Jio, Airtel, Vi, and BSNL. Process hundreds of recharges daily with zero downtime.</p>
                 </div>
-
                 <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card-border"></div>
-                    <div class="service-icon">☎️</div>
-                    <h3 class="service-title">Landline Payment</h3>
-                    <p class="service-desc">Easy landline bill payment for all providers nationwide</p>
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Electricity Bill</h3>
+                    <p class="service-desc">Pay electricity bills for all state electricity boards across India. Instant confirmation and receipt generation for every payment made.</p>
                 </div>
-
                 <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card-border"></div>
-                    <div class="service-icon">📞</div>
-                    <h3 class="service-title">Postpaid Bill Payment</h3>
-                    <p class="service-desc">Quick postpaid mobile bill settlement with instant confirmation</p>
-                </div>
-
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">💳</div>
-                    <h3 class="service-title">Credit Card Payment</h3>
-                    <p class="service-desc">Convenient credit card bill payments with zero surcharge</p>
-                </div>
-
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card-border"></div>
                     <div class="service-icon">🏧</div>
-                    <h3 class="service-title">AEPS (Aadhaar Payment)</h3>
-                    <p class="service-desc">Secure Aadhaar-enabled payment system for all transactions</p>
+                    <h3 class="service-title">AEPS Banking</h3>
+                    <p class="service-desc">Aadhaar-enabled payment system for cash withdrawal, balance enquiry, and mini statements. Serve unbanked customers in your locality.</p>
                 </div>
+            </div>
+            <div style="text-align:center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="services.html" class="btn btn-primary">View All Services →</a>
             </div>
         </div>
     </section>
@@ -175,7 +144,6 @@
                 <h2 class="section-title">Retailer Dashboard</h2>
                 <p class="section-subtitle">Powerful analytics and transaction management at your fingertips</p>
             </div>
-
             <div class="dashboard-container" data-aos="zoom-in">
                 <div class="dashboard-mockup">
                     <div class="dashboard-header">
@@ -186,7 +154,6 @@
                             <button class="dash-btn">👤</button>
                         </div>
                     </div>
-
                     <div class="dashboard-content">
                         <div class="dashboard-cards">
                             <div class="dash-card">
@@ -202,11 +169,10 @@
                                 <div class="dash-card-value">128</div>
                             </div>
                         </div>
-
                         <div class="dashboard-chart">
                             <div class="chart-title">Weekly Performance</div>
                             <svg viewBox="0 0 300 100" class="chart-svg">
-                                <polyline points="10,80 50,50 90,65 130,35 170,55 210,30 250,45 290,20" 
+                                <polyline points="10,80 50,50 90,65 130,35 170,55 210,30 250,45 290,20"
                                          fill="none" stroke="url(#chartGradient)" stroke-width="3"/>
                                 <defs>
                                     <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -216,7 +182,6 @@
                                 </defs>
                             </svg>
                         </div>
-
                         <div class="dashboard-transactions">
                             <div class="trans-header">Recent Transactions</div>
                             <div class="trans-item">
@@ -237,62 +202,52 @@
                     </div>
                 </div>
             </div>
+            <div style="text-align:center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="dashboard.html" class="btn btn-primary">View Full Dashboard →</a>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Preview Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <h2 class="section-title">About Us</h2>
+                    <h2 class="section-title">About Harmonious techsol</h2>
                     <p class="about-description">
-                        We are revolutionizing the digital payment landscape in India, empowering millions of retailers and entrepreneurs to participate in the fintech revolution. Our mission is to make financial services accessible, affordable, and simple for everyone.
+                        Founded in 2020, Harmonious techsol is revolutionizing the digital payment landscape in India. We empower over 50,000 retailers and entrepreneurs across 28 states to participate in the fintech revolution. Our mission is to make financial services accessible, affordable, and simple for every Indian.
                     </p>
-                    
                     <div class="about-points">
                         <div class="about-point">
                             <div class="point-icon">✓</div>
                             <div class="point-text">
                                 <h4>Digital India Vision</h4>
-                                <p>Supporting Government's Digital Payment Initiative</p>
+                                <p>Actively supporting the Government's Digital Payment Initiative since 2020</p>
                             </div>
                         </div>
-
                         <div class="about-point">
                             <div class="point-icon">✓</div>
                             <div class="point-text">
                                 <h4>Secure & Reliable</h4>
-                                <p>Bank-level security with 99.9% uptime guarantee</p>
+                                <p>Bank-level 256-bit encryption with 99.9% uptime guarantee</p>
                             </div>
                         </div>
-
                         <div class="about-point">
                             <div class="point-icon">✓</div>
                             <div class="point-text">
-                                <h4>24/7 Support</h4>
-                                <p>Dedicated support team always ready to help</p>
-                            </div>
-                        </div>
-
-                        <div class="about-point">
-                            <div class="point-icon">✓</div>
-                            <div class="point-text">
-                                <h4>Lowest Charges</h4>
-                                <p>Most competitive rates in the industry</p>
+                                <h4>Instant Settlement</h4>
+                                <p>Same-day commission settlement directly to your bank account</p>
                             </div>
                         </div>
                     </div>
-
-                    <button class="btn btn-primary">Learn More</button>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us →</a>
                 </div>
-
                 <div class="about-visual" data-aos="fade-left">
                     <div class="about-image-container">
                         <div class="image-placeholder">
                             <div class="placeholder-content">
                                 <span class="icon">🚀</span>
-                                <span class="text">Growing Together</span>
+                                <span class="text">Growing Together Since 2020</span>
                             </div>
                         </div>
                     </div>
@@ -301,60 +256,76 @@
         </div>
     </section>
 
-    <!-- Earnings Section -->
+    <!-- Earnings Preview Section -->
     <section id="earnings" class="earnings">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Start Earning Today</h2>
-                <p class="section-subtitle">Multiple revenue streams for your business</p>
+                <p class="section-subtitle">Multiple revenue streams to grow your income every single day</p>
             </div>
-
             <div class="earnings-grid">
                 <div class="earning-card" data-aos="fade-up">
-                    <div class="earning-icon">1</div>
+                    <div class="earning-icon">💰</div>
                     <h3>Commission on Every Transaction</h3>
-                    <p>Earn 1.5% - 3% commission on every transaction you process through our platform</p>
+                    <p>Earn 1.5% - 3% commission on every transaction you process. With 100 transactions a day, that's ₹1,500+ daily income.</p>
                 </div>
-
                 <div class="earning-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="earning-icon">2</div>
+                    <div class="earning-icon">🎁</div>
                     <h3>Referral Bonus Program</h3>
-                    <p>Refer new retailers and earn up to ₹5,000 per successful referral</p>
-                </div>
-
-                <div class="earning-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="earning-icon">3</div>
-                    <h3>Monthly Incentives</h3>
-                    <p>Reach targets and unlock monthly bonus pools up to ₹1,00,000</p>
-                </div>
-
-                <div class="earning-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="earning-icon">4</div>
-                    <h3>Cashback & Rewards</h3>
-                    <p>Earn additional cashback and reward points on bulk transactions</p>
+                    <p>Refer new retailers and earn up to ₹5,000 per successful referral. Build your network and earn passive income every month.</p>
                 </div>
             </div>
+            <div style="text-align:center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="earnings.html" class="btn btn-primary">View Earnings Details →</a>
+            </div>
+        </div>
+    </section>
 
-            <div class="earning-flow" data-aos="fade-up" data-aos-delay="200">
-                <div class="flow-step">
-                    <div class="flow-number">1</div>
-                    <div class="flow-label">Sign Up</div>
+    <!-- Testimonials Preview Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our Partners Say</h2>
+                <p class="section-subtitle">Real stories from our 50,000+ successful retailers across India</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-header">
+                        <div class="avatar">👨‍💼</div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Rajesh Kumar</h4>
+                            <p class="testimonial-role">Retail Store Owner, Delhi</p>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"This platform has transformed my retail business. I've doubled my income in just 3 months. The support team is incredibly responsive and always available!"</p>
                 </div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step">
-                    <div class="flow-number">2</div>
-                    <div class="flow-label">Verify</div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍💼</div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Priya Singh</h4>
+                            <p class="testimonial-role">Pharmacy Owner, Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Easy to use interface and instant settlements. My customers love the quick transaction process. I earn ₹2,000+ extra every day. Highly recommended!"</p>
                 </div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step">
-                    <div class="flow-number">3</div>
-                    <div class="flow-label">Start Selling</div>
-                </div>
-                <div class="flow-arrow">→</div>
-                <div class="flow-step">
-                    <div class="flow-number">4</div>
-                    <div class="flow-label">Earn & Grow</div>
-                </div>
+            </div>
+            <div style="text-align:center; margin-top: 2rem;" data-aos="fade-up">
+                <a href="testimonials.html" class="btn btn-primary">Read All Testimonials →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section style="padding: 5rem 0; background: linear-gradient(135deg, #6366F1 0%, #06B6D4 100%);">
+        <div class="container" style="text-align: center;" data-aos="fade-up">
+            <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Ready to Join 50,000+ Retailers?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Start your digital payment journey today. Registration is free, setup takes 10 minutes, and you can start earning immediately.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-lg" style="background: white; color: #6366F1; font-weight: 600;">Contact Us Now</a>
+                <button class="btn btn-outline btn-lg" style="border-color: white; color: white;" onclick="document.getElementById('loginBtn').click()">Register Free</button>
             </div>
         </div>
     </section>
@@ -376,210 +347,72 @@
         </div>
     </section>
 
-    <!-- Contact Email Section -->
-    <section id="contact-email" class="contact-email-section">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Reach out anytime, we're here to help</p>
-            </div>
-
-            <div class="email-card glass-thick" data-aos="zoom-in">
-                <div class="email-card-border"></div>
-                <div class="email-content">
-                    <div class="email-icon">✉️</div>
-                    <div class="email-text">
-                        <p class="email-label">Email Address</p>
-                        <a href="mailto:support@yourwebsite.com" class="email-link">support@yourwebsite.com</a>
-                    </div>
-                    <button class="copy-btn" title="Copy email" onclick="copyToClipboard('support@yourwebsite.com')">📋</button>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Harmonious techsol</h4>
+                    <p>Empowering retailers with seamless digital payment solutions across India since 2020.</p>
+                    <p style="margin-top:0.5rem;">📧 support@harmonioustechsol.com</p>
+                    <p>📞 +91 98765-43210</p>
                 </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="earnings.html">Earnings</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Mobile Recharge</a></li>
+                        <li><a href="services.html">Bill Payments</a></li>
+                        <li><a href="services.html">AEPS Banking</a></li>
+                        <li><a href="services.html">DTH Recharge</a></li>
+                        <li><a href="services.html">Money Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                    <h4 style="margin-top:1rem;">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harmonious techsol. All rights reserved. | Made with ❤️ in India | CIN: U74999DL2020PTC123456</p>
             </div>
         </div>
-    </section>
-
-    <!-- Our Partners Section -->
-    <section id="partners" class="partners-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Trusted Partners</h2>
-                <p class="section-subtitle">Meet the visionary leaders behind our success</p>
-            </div>
-
-            <div class="partners-grid">
-                <div class="partner-card" data-aos="fade-up">
-                    <div class="partner-card-border"></div>
-                    <div class="partner-image">
-                        <div class="partner-avatar">👨‍💼</div>
-                    </div>
-                    <div class="partner-content">
-                        <h3 class="partner-name">Nitin Aggarwal</h3>
-                        <p class="partner-role">Strategic Financial Partner</p>
-                        <ul class="partner-points">
-                            <li>Expert in fintech solutions</li>
-                            <li>10+ years experience</li>
-                            <li>Strong business network</li>
-                        </ul>
-                        <div class="partner-social">
-                            <a href="#" title="LinkedIn" class="social-icon">in</a>
-                            <a href="#" title="Email" class="social-icon">✉️</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="partner-card-border"></div>
-                    <div class="partner-image">
-                        <div class="partner-avatar">👨‍💼</div>
-                    </div>
-                    <div class="partner-content">
-                        <h3 class="partner-name">Rohit Gupta</h3>
-                        <p class="partner-role">Operations & Growth Partner</p>
-                        <ul class="partner-points">
-                            <li>Specialist in digital payments</li>
-                            <li>Scalable system strategist</li>
-                            <li>Customer experience focused</li>
-                        </ul>
-                        <div class="partner-social">
-                            <a href="#" title="LinkedIn" class="social-icon">in</a>
-                            <a href="#" title="Email" class="social-icon">✉️</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">What Our Partners Say</h2>
-                <p class="section-subtitle">Real stories from our successful retailers</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up">
-                    <div class="testimonial-header">
-                        <div class="avatar">👨‍💼</div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Rajesh Kumar</h4>
-                            <p class="testimonial-role">Retail Store Owner</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "This platform has transformed my retail business. I've doubled my income in just 3 months. The support team is incredibly responsive!"
-                    </p>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-header">
-                        <div class="avatar">👩‍💼</div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Priya Singh</h4>
-                            <p class="testimonial-role">Pharmacy Owner</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Easy to use interface and instant settlements. My customers love the quick transaction process. Highly recommended!"
-                    </p>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-header">
-                        <div class="avatar">👨‍🔧</div>
-                        <div class="testimonial-info">
-                            <h4 class="testimonial-name">Amit Patel</h4>
-                            <p class="testimonial-role">Service Center Owner</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Best fintech platform I've used. Zero hidden charges, transparent commission structure, and amazing customer support."
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">We'd love to hear from you. Send us a message!</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-form-wrapper" data-aos="fade-right">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="your@email.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
-                </div>
-
-                <div class="contact-info" data-aos="fade-left">
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h4>Office Address</h4>
-                        <p>123 Tech Park, Digital District<br>Bangalore, India 560001</p>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">📞</div>
-                        <h4>Phone Number</h4>
-                        <p>+91 1800-FINTECH<br>+91 98765-43210</p>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">✉️</div>
-                        <h4>Email Address</h4>
-                        <p>support@fintech.in<br>partners@fintech.in</p>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">🕐</div>
-                        <h4>Working Hours</h4>
-                        <p>Monday - Friday: 9 AM - 6 PM<br>Saturday: 10 AM - 4 PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <!-- Login/Register Modal -->
     <div class="modal" id="authModal">
         <div class="modal-content">
             <button class="modal-close" id="modalClose">✕</button>
-            
             <div class="auth-container">
                 <div class="auth-toggle">
                     <button class="auth-toggle-btn active" data-tab="login">Login</button>
                     <button class="auth-toggle-btn" data-tab="register">Register</button>
                 </div>
-
-                <!-- Login Form -->
                 <div class="auth-form active" id="loginForm">
                     <h2>Welcome Back</h2>
                     <form>
@@ -592,18 +425,13 @@
                             <input type="password" id="loginPassword" placeholder="Enter your password" required>
                         </div>
                         <div class="form-row">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span>Remember me</span>
-                            </label>
+                            <label class="checkbox"><input type="checkbox"><span>Remember me</span></label>
                             <a href="#" class="forgot-link">Forgot Password?</a>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Login</button>
                         <p class="form-footer">Don't have an account? <a href="#" class="auth-switch" data-tab="register">Register here</a></p>
                     </form>
                 </div>
-
-                <!-- Register Form -->
                 <div class="auth-form" id="registerForm">
                     <h2>Create Account</h2>
                     <form>
@@ -627,10 +455,7 @@
                             <label for="registerConfirm">Confirm Password</label>
                             <input type="password" id="registerConfirm" placeholder="Confirm your password" required>
                         </div>
-                        <label class="checkbox">
-                            <input type="checkbox" required>
-                            <span>I agree to Terms & Conditions</span>
-                        </label>
+                        <label class="checkbox"><input type="checkbox" required><span>I agree to Terms &amp; Conditions</span></label>
                         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                         <p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p>
                     </form>
@@ -638,61 +463,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Loading/Preloader -->
-    <div class="loader" id="loader">
-        <div class="loader-spinner">
-            <div class="spinner-dot"></div>
-            <div class="spinner-dot"></div>
-            <div class="spinner-dot"></div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Harmonious techsol</h4>
-                    <p>Empowering retailers with seamless digital payment solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Support Center</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Harmonious techsol. All rights reserved. | Made with ❤️ in India</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-
-
 
     <script src="particles.js"></script>
     <script src="theme.js"></script>

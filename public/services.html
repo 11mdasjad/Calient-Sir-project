@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harmonious techsol Services - Mobile Recharge, Bill Payments, AEPS, DTH, Electricity, Water, Gas and more digital services.">
     <title>Services - Harmonious techsol</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,6 +12,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%236366F1' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='48' fill='white' text-anchor='middle' font-weight='bold'%3EHT%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <!-- Header & Navigation -->
     <header class="header sticky" id="header">
         <nav class="navbar container">
             <div class="nav-wrapper">
@@ -20,7 +22,7 @@
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
                     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="earnings.html" class="nav-link">Earnings</a></li>
@@ -49,61 +51,201 @@
         </nav>
     </header>
 
-    <section id="services" class="services" style="padding-top: 8rem;">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive digital services designed for your business</p>
+    <!-- Page Hero Banner -->
+    <section style="padding-top: 8rem; padding-bottom: 4rem; background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #06B6D4 100%); text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h1 style="color: white; font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Our Services</h1>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 600px; margin: 0 auto 1.5rem;">9 powerful digital services to grow your retail business and serve your customers better every day.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">✅ 99.9% Uptime</span>
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">⚡ Instant Processing</span>
+                <span style="background: rgba(255,255,255,0.2); color: white; padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.9rem;">🔒 Bank-level Security</span>
             </div>
-            <div class="services-grid">
-                <div class="service-card card-hover-glow" data-aos="fade-up">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">📱</div>
-                    <h3 class="service-title">Mobile Recharge</h3>
-                    <p class="service-desc">Instant prepaid & postpaid recharge for all major networks</p>
+        </div>
+    </section>
+
+    <!-- Service Stats Bar -->
+    <section style="background: var(--bg-secondary, #f8fafc); padding: 2rem 0; border-bottom: 1px solid var(--border-color, #e2e8f0);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center;" data-aos="fade-up">
+                <div>
+                    <div style="font-size: 2rem; font-weight: 800; color: #6366F1;">99.9%</div>
+                    <div style="color: var(--text-secondary, #64748b); font-size: 0.9rem;">Platform Uptime</div>
                 </div>
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">☎️</div>
-                    <h3 class="service-title">Landline Payment</h3>
-                    <p class="service-desc">Easy landline bill payment for all providers nationwide</p>
+                <div>
+                    <div style="font-size: 2rem; font-weight: 800; color: #6366F1;">2M+</div>
+                    <div style="color: var(--text-secondary, #64748b); font-size: 0.9rem;">Monthly Transactions</div>
                 </div>
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">📞</div>
-                    <h3 class="service-title">Postpaid Bill Payment</h3>
-                    <p class="service-desc">Quick postpaid mobile bill settlement with instant confirmation</p>
+                <div>
+                    <div style="font-size: 2rem; font-weight: 800; color: #6366F1;">50+</div>
+                    <div style="color: var(--text-secondary, #64748b); font-size: 0.9rem;">Operators Supported</div>
                 </div>
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">💳</div>
-                    <h3 class="service-title">Credit Card Payment</h3>
-                    <p class="service-desc">Convenient credit card bill payments with zero surcharge</p>
-                </div>
-                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card-border"></div>
-                    <div class="service-icon">🏧</div>
-                    <h3 class="service-title">AEPS (Aadhaar Payment)</h3>
-                    <p class="service-desc">Secure Aadhaar-enabled payment system for all transactions</p>
+                <div>
+                    <div style="font-size: 2rem; font-weight: 800; color: #6366F1;">24/7</div>
+                    <div style="color: var(--text-secondary, #64748b); font-size: 0.9rem;">Customer Support</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- All Services Grid -->
+    <section id="services" class="services" style="padding-top: 4rem;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">All Digital Services</h2>
+                <p class="section-subtitle">Everything your customers need, all in one platform</p>
+            </div>
+            <div class="services-grid">
+                <!-- Original 5 services -->
+                <div class="service-card card-hover-glow" data-aos="fade-up">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">Mobile Recharge</h3>
+                    <p class="service-desc">Instant prepaid &amp; postpaid recharge for all major networks — Jio, Airtel, Vi, BSNL, and more. Support for all plan types including data, voice, and combo packs. Process unlimited recharges with real-time confirmation.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">☎️</div>
+                    <h3 class="service-title">Landline Payment</h3>
+                    <p class="service-desc">Easy landline bill payment for all providers nationwide including BSNL, MTNL, Airtel, and Jio Fiber. Customers can pay bills instantly without visiting the telecom office. Instant receipt generation included.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">📞</div>
+                    <h3 class="service-title">Postpaid Bill Payment</h3>
+                    <p class="service-desc">Quick postpaid mobile bill settlement with instant confirmation for all operators. Supports Airtel, Jio, Vi, and BSNL postpaid plans. Customers get SMS confirmation within seconds of payment.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">💳</div>
+                    <h3 class="service-title">Credit Card Payment</h3>
+                    <p class="service-desc">Convenient credit card bill payments with zero surcharge for all major banks — HDFC, SBI, ICICI, Axis, Kotak, and more. Instant payment confirmation and digital receipt. Earn commission on every payment processed.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">🏧</div>
+                    <h3 class="service-title">AEPS (Aadhaar Payment)</h3>
+                    <p class="service-desc">Secure Aadhaar-enabled payment system for cash withdrawal, balance enquiry, and mini statements. Serve unbanked and underbanked customers in your area. Biometric authentication ensures 100% secure transactions.</p>
+                </div>
+                <!-- 4 New services -->
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">📺</div>
+                    <h3 class="service-title">DTH Recharge</h3>
+                    <p class="service-desc">Recharge DTH connections for all providers — Tata Sky, Dish TV, Airtel Digital TV, Sun Direct, and Videocon D2H. Support for all subscription plans and add-on packs. Instant activation after recharge.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Electricity Bill</h3>
+                    <p class="service-desc">Pay electricity bills for all state electricity boards across India — MSEDCL, BESCOM, TNEB, UPPCL, WBSEDCL, and 40+ more. Instant payment confirmation and official receipt. Never let your customers face power cuts due to unpaid bills.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">💧</div>
+                    <h3 class="service-title">Water Bill</h3>
+                    <p class="service-desc">Pay municipal water bills for all major cities and towns across India. Supports Delhi Jal Board, BWSSB, Chennai Metro Water, and 30+ water utilities. Quick payment with instant digital receipt for your records.</p>
+                </div>
+                <div class="service-card card-hover-glow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-border"></div>
+                    <div class="service-icon">🔥</div>
+                    <h3 class="service-title">Gas Bill</h3>
+                    <p class="service-desc">Pay piped natural gas bills for Indraprastha Gas, Mahanagar Gas, Gujarat Gas, and all major PNG providers. Also supports LPG cylinder booking for Indane, HP Gas, and Bharat Gas. Instant confirmation every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section style="padding: 5rem 0; background: var(--bg-secondary, #f8fafc);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Start processing transactions in just 4 simple steps</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="text-align: center; padding: 2rem;" data-aos="fade-up">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #6366F1, #8B5CF6); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">1</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary, #1e293b);">Choose Service</h3>
+                    <p style="color: var(--text-secondary, #64748b);">Select from our 9+ digital services available on the platform. All services are accessible from a single dashboard.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;" data-aos="fade-up" data-aos-delay="100">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #8B5CF6, #06B6D4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">2</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary, #1e293b);">Enter Details</h3>
+                    <p style="color: var(--text-secondary, #64748b);">Enter the customer's mobile number, account number, or consumer ID. Our system auto-fetches bill details instantly.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;" data-aos="fade-up" data-aos-delay="200">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #06B6D4, #10B981); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">3</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary, #1e293b);">Make Payment</h3>
+                    <p style="color: var(--text-secondary, #64748b);">Confirm the amount and process the payment from your wallet balance. Transactions complete in under 3 seconds.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem;" data-aos="fade-up" data-aos-delay="300">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #10B981, #F59E0B); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">✓</div>
+                    <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-primary, #1e293b);">Get Confirmation</h3>
+                    <p style="color: var(--text-secondary, #64748b);">Receive instant digital receipt and SMS confirmation. Your commission is credited to your wallet immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our services</p>
+            </div>
+            <div style="max-width: 800px; margin: 3rem auto 0; display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="background: var(--card-bg, white); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem;" data-aos="fade-up">
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #6366F1; margin-bottom: 0.75rem;">Q: How quickly are transactions processed?</h4>
+                    <p style="color: var(--text-secondary, #64748b);">All transactions on our platform are processed in real-time, typically within 2-3 seconds. Mobile recharges and bill payments are instant. In rare cases of network delays, transactions complete within 60 seconds and you receive an SMS confirmation.</p>
+                </div>
+                <div style="background: var(--card-bg, white); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem;" data-aos="fade-up" data-aos-delay="100">
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #6366F1; margin-bottom: 0.75rem;">Q: What happens if a transaction fails?</h4>
+                    <p style="color: var(--text-secondary, #64748b);">In case of a failed transaction, the amount is automatically refunded to your wallet within 24 hours. Our success rate is 99.9%, so failures are extremely rare. You can also raise a dispute through our support portal for immediate resolution.</p>
+                </div>
+                <div style="background: var(--card-bg, white); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem;" data-aos="fade-up" data-aos-delay="200">
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #6366F1; margin-bottom: 0.75rem;">Q: How many operators are supported for mobile recharge?</h4>
+                    <p style="color: var(--text-secondary, #64748b);">We support all major telecom operators in India including Jio, Airtel, Vi (Vodafone-Idea), BSNL, and MTNL. We cover all circles across India — that's 50+ operator-circle combinations. We also support international roaming recharges for select operators.</p>
+                </div>
+                <div style="background: var(--card-bg, white); border: 1px solid var(--border-color, #e2e8f0); border-radius: 1rem; padding: 1.5rem;" data-aos="fade-up" data-aos-delay="300">
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: #6366F1; margin-bottom: 0.75rem;">Q: Is there a minimum wallet balance required to start?</h4>
+                    <p style="color: var(--text-secondary, #64748b);">You can start with a minimum wallet load of ₹500. There is no maximum limit. We recommend maintaining a balance of ₹5,000-₹10,000 for smooth daily operations. Wallet top-up is instant via UPI, NEFT, IMPS, or bank transfer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Harmonious techsol</h4>
-                    <p>Empowering retailers with seamless digital payment solutions.</p>
+                    <p>Empowering retailers with seamless digital payment solutions across India since 2020.</p>
+                    <p style="margin-top:0.5rem;">📧 support@harmonioustechsol.com</p>
+                    <p>📞 +91 98765-43210</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="earnings.html">Earnings</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Mobile Recharge</a></li>
+                        <li><a href="services.html">Bill Payments</a></li>
+                        <li><a href="services.html">AEPS Banking</a></li>
+                        <li><a href="services.html">DTH Recharge</a></li>
+                        <li><a href="services.html">Money Transfer</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -111,17 +253,17 @@
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Refund Policy</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h4 style="margin-top:1rem;">Follow Us</h4>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">f</a>
                         <a href="#" aria-label="Twitter">𝕏</a>
                         <a href="#" aria-label="LinkedIn">in</a>
                         <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
                     </div>
                 </div>
             </div>
@@ -131,6 +273,7 @@
         </div>
     </footer>
 
+    <!-- Login/Register Modal -->
     <div class="modal" id="authModal">
         <div class="modal-content">
             <button class="modal-close" id="modalClose">✕</button>
@@ -160,7 +303,7 @@
                         <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 98765 43210" required></div>
                         <div class="form-group"><label>Password</label><input type="password" placeholder="Create a strong password" required></div>
                         <div class="form-group"><label>Confirm Password</label><input type="password" placeholder="Confirm your password" required></div>
-                        <label class="checkbox"><input type="checkbox" required><span>I agree to Terms & Conditions</span></label>
+                        <label class="checkbox"><input type="checkbox" required><span>I agree to Terms &amp; Conditions</span></label>
                         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                         <p class="form-footer">Already have an account? <a href="#" class="auth-switch" data-tab="login">Login here</a></p>
                     </form>
